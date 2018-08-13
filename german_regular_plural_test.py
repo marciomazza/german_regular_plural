@@ -17,8 +17,9 @@ regular_plurals = '''
     # masculine or neuter ending with EL EN ER => just umlaut
     der Lehrer Lehrer
     der Apfel  Äpfel
-    der Löffel Löffel
     das Messer Messer
+    der Löffel Löffel
+    das Käufer Käufer
     # (that would be the regular form, although it's wrong)
     der Arm    Ärme
 

@@ -12,6 +12,10 @@ RE_UMLAUT = re.compile('^(.*)([aou])([^aou]*)$')
 
 def with_umlaut(word):
     word = word.lower()
+    # if the word already has an umlaut, we're done
+    if any(u in word for u in UMLAUTS.values()):
+        return word.capitalize()
+
     umlauted = word
     if not RE_NO_UMLAUT_EU.match(word):
         for regex in (RE_UMLAUT_AU, RE_UMLAUT):
